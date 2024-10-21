@@ -31,10 +31,30 @@
 // const title =  document.querySelector('#h1')
 
 // title.style.color= 'red' 
-const listItem = document.querySelectorAll('.list-items');
+// const listItem = document.querySelectorAll('.list-items');
 
-for (i=0; i < listItem.length;i++){
-    listItem[i].style.fontSize = '10rem'
-}
+// for (i=0; i < listItem.length;i++){
+//     listItem[i].style.fontSize = '10rem'
+// }
 
-console.log (listItem)
+// console.log (listItem)
+
+const ul = document.querySelector('ul')
+const li = document.createElement('li')
+
+ul.append(li)
+li.innerText = 'X-Men';
+li.setAttribute('id','main-heading')
+li.removeAttribute('id');
+li.classList.add('list-items')
+const title = document.querySelector('#main-heading')
+
+console.log(title.getAttribute('id'))
+// const firstListItem =  document.querySelector('.list-items')
+
+// console.log(firstListItem.innerText)
+// console.log(firstListItem.innerHTML)
+// console.log(firstListItem.textContent)
+
+
+li.remove();
